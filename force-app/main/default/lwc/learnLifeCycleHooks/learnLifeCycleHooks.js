@@ -1,4 +1,4 @@
-import { LightningElement, api } from 'lwc';
+import { LightningElement } from 'lwc';
 
 export default class LearnLifeCycleHooks extends LightningElement {
 
@@ -27,14 +27,15 @@ export default class LearnLifeCycleHooks extends LightningElement {
         console.log('I am disconnected callback')
     }
 
-    //To handle the error coming from the child components
-    // errorCallback(error, stack) {
-    //     console.log('error', error)
-    //     console.log('stack', stack)
-    //     console.log('I am error callback')
-    // }
+    // To handle the error coming from the child components
+    errorCallback(error, stack) {
+        console.log('error', error)
+        console.log('stack', stack)
+        console.log('I am error callback')
+    }
 
     handleButtonClick() {
+        // this.counter++
         this.showChildComponent = !this.showChildComponent
     }
 }

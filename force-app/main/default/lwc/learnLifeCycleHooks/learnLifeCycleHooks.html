@@ -1,14 +1,11 @@
 <template>
 
-    <!-- <section class="slds-var-p-around_large">
-        <p>Count is {counter}</p>
-        <br />
-        
-    </section> -->
+    <p>Counter is {counter}</p>
     <lightning-button label="Click Me" variant="brand-outline" onclick={handleButtonClick}>
     </lightning-button>
 
     <template lwc:if={showChildComponent}>
-        <c-child-component prop2="prop2" prop1="prop1"></c-child-component>
+        <c-child-component prop2="props" prop1="prop"></c-child-component>
     </template>
+
 </template>
