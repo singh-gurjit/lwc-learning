@@ -42,9 +42,4 @@ export default class LearnImperativeApexCalling extends LightningElement {
         }
         console.log('This is the end line')
     }
-
-
-
-
-
 }
